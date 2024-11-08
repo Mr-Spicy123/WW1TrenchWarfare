@@ -26,7 +26,7 @@ a {
 }
 
 p {
-    text-indent: 40px;
+    text-indent: 2.5vw;
     text-align: center;
 }
 
@@ -91,4 +91,13 @@ p {
     top: 32vh;
     width: 45vw;
     transition: opacity 5s ease;
+}
+
+.idea-img {
+    width:32.5vw;
+    height: 45vh;
+    object-fit: cover;
+    margin-left: 3px;
+    margin-top: 7vh;
+    border-radius: 15px;
 }
