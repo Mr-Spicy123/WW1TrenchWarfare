@@ -1,0 +1,93 @@
+body {
+    background: conic-gradient(from 0deg, black, darkslategray, black, darkslategray, black);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: rgb(65, 64, 64);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+h2 {
+    color: gray;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+a {
+    color: rgb(59, 105, 105);
+}
+
+p {
+    text-indent: 40px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    gap: 10px; /* Adds space between the divs */
+}
+
+.idea {
+    flex: 1;
+
+    background: linear-gradient(to right, black, rgb(25, 43, 43));
+    width: 400px;
+    height: 30px;
+
+    border-radius: 15px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    color: rgb(90, 150, 150);
+    font-family: sans-serif;
+
+    transition: flex-basis 0.7s ease, height 0.7s ease;
+    overflow: hidden;
+    
+}
+
+.idea:hover {
+    height: 425px;
+    flex-basis: 25%;
+}
+
+.idea span {
+    text-align: center;
+    font-size: 1.3rem;
+    transition: transform 0.7s ease, font-size 0.7s ease;
+}
+
+.idea:hover span {
+    display: block;
+    text-align: center;
+    font-size: 240%;
+    word-wrap: break-word;
+}
+
+.idea .text {
+    opacity: 0;
+    font-size: 15px;
+    visibility: hidden;
+    position: absolute;
+    color: rgb(90, 150, 150);
+    transition: visibility 0s;
+}
+
+.idea:hover .text {
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    justify-self: center;
+    top: 200px;
+    width: 600px;
+    transition: opacity 5s ease;
+}
