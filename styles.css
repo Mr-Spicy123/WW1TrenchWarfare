@@ -1,22 +1,24 @@
 body {
-    background: conic-gradient(from 0deg, black, darkslategray, black, darkslategray, black);
+    background: linear-gradient(to right, darkslategray, black, darkslategray);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
-    color: rgb(65, 64, 64);
+    color: rgb(31, 50, 50);
     text-align: center;
     font-family: sans-serif;
-    font-size: 35px;
+    font-size: 2.4vw;
 }
 
 h2 {
-    color: gray;
+    color: rgb(59, 105, 105);
     text-align: center;
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 2.1vw;
 }
 
 a {
@@ -36,10 +38,9 @@ p {
 
 .idea {
     flex: 1;
-
     background: linear-gradient(to right, black, rgb(25, 43, 43));
     width: 400px;
-    height: 30px;
+    height: 3.7vh;
 
     border-radius: 15px;
     padding: 20px;
@@ -56,26 +57,26 @@ p {
 }
 
 .idea:hover {
-    height: 70vh;
-    flex-basis: 25%;
+    min-height: 70vh;
+    flex-basis: 25vw;
 }
 
 .idea span {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2vw;
     transition: transform 0.7s ease, font-size 0.7s ease;
 }
 
 .idea:hover span {
     display: block;
     text-align: center;
-    font-size: 240%;
+    font-size: 3.5vw;
     word-wrap: break-word;
 }
 
 .idea .text {
     opacity: 0;
-    font-size: 15px;
+    font-size: 1.2vw;
     visibility: hidden;
     position: absolute;
     color: rgb(90, 150, 150);
@@ -87,7 +88,7 @@ p {
     visibility: visible;
     text-align: center;
     justify-self: center;
-    top: 200px;
-    width: 600px;
+    top: 32vh;
+    width: 45vw;
     transition: opacity 5s ease;
 }
