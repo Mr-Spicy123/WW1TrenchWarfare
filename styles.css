@@ -1,24 +1,80 @@
 body {
-    background: linear-gradient(to right, darkslategray, black, darkslategray);
+    background: rgb(255, 255, 255);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.poppy-logo {
+    width: 2vw;
+    height: 2vw;
+}
+
+.block {
+    height: 7vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 30vw;
+    text-align: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 1.2vw;
+    color: white;
+}
+
+.poppy-left {
+    margin-top: 1.7vh;
+}
+
+.block-text {
+    margin-top: 2vh;
+}
+
+.poppy-right {
+    margin-top: 1.7vh;
+}
+
+.title {
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; /* Aligns the h1 and h2 vertically */
+    justify-content: center; /* Centers them vertically */
+    align-items: center; /* Centers them horizontally */
+    background-image: url('https://66.media.tumblr.com/02d5a13e40179c6faa0e0382adacf584/tumblr_o0lfrcALwC1qezks7o1_500.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1 {
-    color: rgb(31, 50, 50);
+    color: rgb(11, 41, 16);
     text-align: center;
+    align-items: center;
+    justify-content: center;
     font-family: sans-serif;
-    font-size: 2.4vw;
+    margin-top: 0vh;
+    margin-bottom: 0px;
+    font-size: 11vw;
 }
 
 h2 {
-    color: rgb(59, 105, 105);
+    color: rgb(7, 26, 10);
     text-align: center;
+    align-items: center;
+    justify-content: center;
     font-family: sans-serif;
-    font-size: 2.1vw;
+    margin-top: 0px;
+    font-size: 6vw;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
 }
 
 a {
@@ -33,71 +89,7 @@ p {
 .container {
     display: flex;
     width: 100%;
-    gap: 10px; /* Adds space between the divs */
+    gap: 0px; /* Adds space between the divs */
 }
 
-.idea {
-    flex: 1;
-    background: linear-gradient(to right, black, rgb(25, 43, 43));
-    width: 400px;
-    height: 3.7vh;
 
-    border-radius: 15px;
-    padding: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: first baseline;
-    color: rgb(90, 150, 150);
-    font-family: sans-serif;
-
-    transition: flex-basis 0.7s ease, height 0.7s ease;
-    overflow: hidden;
-    
-}
-
-.idea:hover {
-    min-height: 70vh;
-    flex-basis: 25vw;
-}
-
-.idea span {
-    text-align: center;
-    font-size: 2vw;
-    transition: transform 0.7s ease, font-size 0.7s ease;
-}
-
-.idea:hover span {
-    display: block;
-    text-align: center;
-    font-size: 3.5vw;
-    word-wrap: break-word;
-}
-
-.idea .text {
-    opacity: 0;
-    font-size: 1.2vw;
-    visibility: hidden;
-    position: absolute;
-    color: rgb(90, 150, 150);
-    transition: visibility 0s;
-}
-
-.idea:hover .text {
-    opacity: 1;
-    visibility: visible;
-    text-align: center;
-    justify-self: center;
-    top: 32vh;
-    width: 45vw;
-    transition: opacity 5s ease;
-}
-
-.idea-img {
-    width:32.5vw;
-    height: 45vh;
-    object-fit: cover;
-    margin-left: 3px;
-    margin-top: 7vh;
-    border-radius: 15px;
-}
