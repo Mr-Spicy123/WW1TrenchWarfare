@@ -243,10 +243,16 @@ h3 {
     font-size: 2vw;
     width: 40vw;
     height: 7vh;
-    border-radius: 10px;
+    border-radius: 7px;
     background-color: black;
     color: white;
+    transition: width 0.3s ease, height 0.3s ease, font-size 0.3s ease;
+}
 
+.work-cited-button:hover {
+    width: 45vw;
+    height: 8vh;
+    font-size: 2.3vw;
 }
 
 

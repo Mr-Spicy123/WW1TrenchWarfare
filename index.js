@@ -7,7 +7,7 @@ function openIdea2() {
 }
 
 function openIdea3() {
-
+    window.location.href = 'whyTrenches.html';
 }
 
 function openWorkCited() {
