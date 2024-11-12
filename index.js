@@ -9,3 +9,7 @@ function openIdea2() {
 function openIdea3() {
 
 }
+
+function openWorkCited() {
+    window.location.href = 'workCited.html';
+}
