@@ -3,7 +3,7 @@ function openIdea1() {
     window.location.href = 'aboutTrenches.html';
 }
 function openIdea2() {
-
+    window.location.href = 'lifeInTrenches.html';
 }
 
 function openIdea3() {
